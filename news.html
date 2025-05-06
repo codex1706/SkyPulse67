@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+		
+		<title>SkyPulse</title>
+
+		<!-- Loading third party fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+		<!-- Loading main css file -->
+		<link rel="stylesheet" href="style.css">
+		
+		<!--[if lt IE 9]>
+		<script src="js/ie-support/html5.js"></script>
+		<script src="js/ie-support/respond.js"></script>
+		<![endif]-->
+
+	</head>
+
+
+	<body>
+		
+			
+		<div style="min-height: 100vh;" class="site-content">
+			<div class="site-header">
+				<div class="container">
+					<a href="index.html" class="branding">
+						<img src="images/logo.png" alt="" class="logo">
+						<div class="logo-type">
+							<h1 class="site-title">SkyPulse</h1>
+							<small class="site-description">Your personalized Weather Radar with Real-time alerts</small>
+						</div>
+					</a>
+
+					<!-- Default snippet for navigation -->
+					<div class="main-navigation">
+						<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+						<ul class="menu">
+							<li class="menu-item current-menu-item"><a href="index.html">Home</a></li>
+							<li class="menu-item"><a href="news.html">News</a></li>
+
+							<li class="menu-item"><a href="Subscribe.html">Subscribe</a></li>
+						</ul> <!-- .menu -->
+					</div> <!-- .main-navigation -->
+
+					<div class="mobile-navigation"></div>
+
+				</div>
+			</div> <!-- .site-header -->
+
+			<main class="weather-section">
+				<div class="container">
+				  <h1 class="section-title" style="text-align:center; font-size: 2.5rem; color:white; margin-bottom:2rem;">
+					Real-Time Weather Alerts
+				  </h1>
+				  <div class="centered-search-bar">
+				  <div class="find-location" style="margin-bottom: 2rem;">
+					<form id="location-form" class="centered-search">
+						<input type="text" id="location-input" placeholder="Enter city name" style="min-width: 260px; max-width: 100%; flex: 0 1 320px;">
+						<input type="submit" value="Search">
+					</form>
+				  </div>
+			  </div>
+				  <div class="realtime-weather-section">
+					<div id="weather-alerts" class="weather-alerts-grid" style="justify-content: center;">
+					  <!-- Alerts will load here -->
+					</div>
+				  </div>
+				</div>
+			  </main>
+			  
+				  
+			</main> <!-- .main-content -->
+			<footer class="site-footer">
+				<div class="subscribe-form">
+
+				  <button style="align-items: center; justify-content: center;" onclick="window.location.href='contact.html'">Subscribe via SMS</button>
+				</div>
+			  </footer>
+	
+		</div>
+		
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/alerts.js"></script>
+	</body>
+
+</html>
